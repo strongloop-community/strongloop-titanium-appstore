@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="Demo" ng-controller="AppController">
+<html>
+  <head>
+    <title>appstore-nodejs-server</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>appstore-nodejs-server</h1>
+    <p>Welcome to appstore-nodejs-server</p>
+	
+	<h1>iPhone Apps</h1>
+    <p>Welcome to the StrongLoop App Catalog</p>
+	<div>
+		<a href="itms-services://?action=download-manifest&amp;url=http://snapshare.s3.amazonaws.com/mattschmulen/apps/com.appcelerator.roadshow/roadshow.plist">roadShow (iOS Universal / 1.0.0 )</a>
+	</div>
+	<div>
+		<a href="itms-services://?action=download-manifest&amp;url=http://snapshare.s3.amazonaws.com/mattschmulen/apps/com.appcelerator.roadshow/roadshow.plist">appstore (iOS Universal / 1.0.0 )</a>
+	</div>
+	<div>
+		<a href="itms-services://?action=download-manifest&amp;url=http://snapshare.s3.amazonaws.com/mattschmulen/apps/com.appcelerator.roadshow/roadshow.plist">partnerapp (iOS Universal / 1.0.0 )</a>
+	</div>	
+	
+	<h1><%= message %></h1>
+	<ul>
+	    <% for(var i=0; i<appListing.length; i++) { %>
+	        <li>
+	            <a href='supplies/<%= appListing[i] %>'>
+	                <%= appListing[i] %>
+	            </a>
+	        </li>
+	    <% } %>
+	</ul>
+	
+	
+  </body>
+</html>

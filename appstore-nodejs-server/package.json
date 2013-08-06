@@ -1,0 +1,19 @@
+{
+  "name": "appstore-nodejs-server",
+  "description": "appstore-nodejs-server",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "start": "node app" },
+  
+  "dependencies": {
+    "express": "~3.2.4",
+    "ejs": "~0.8.4",
+    "async": "~0.2.8",
+    "connect": "~2.7.9",
+    "passport": "~0.1.17",
+    "q": "~0.9.3",
+    "request": "~2.21.0",
+    "strong-mq": "~0.0.4",
+    "socket.io": "~0.9.14"
+  }
+}
